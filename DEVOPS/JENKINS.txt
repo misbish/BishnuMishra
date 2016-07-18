@@ -1,0 +1,35 @@
+                           OM SHRI SAI RAM 
+						----------------------
+						
+    1.      Jenkins Set Up                                 ----------------- DONE 
+	2.      Jenkins Start Stop From URL                    ----------------- DONE 
+	3.      Jenkins Start Stop From Service Manager        ----------------- DONE 
+	4.      Jenkins Version                                ----------------- DONE 
+	5.      JENKINS_HOME Direcotry                         ----------------- DONE 
+	6.      Jenkins Plugin Installation                    ----------------- DONE 
+	7.      Jenkins LDAP Configuration                                                  
+	8.      Create Freestyle Job                           ----------------- DONE 
+	9.      Create Maven Job                               ----------------- DONE 
+   10.      Create Gradle Job                              ----------------- DONE 
+   11.      Create Pipeline Job                            ----------------- DONE 
+   12.      Create Folder                                  ----------------- DONE 
+   13.      Create Job Template 
+   14.      Create Folder Template 
+   15.      Configure Master & Slave 
+   16.      Create & Manage Node 
+   17.      Fungible Slave
+   18.      Java Integration with Jenkins                  ----------------- DONE 
+   19.      Maven Integration with Jenkins                 ----------------- DONE 
+   20.      Gradle Integration with Jenkins                ----------------- DONE 
+   21.      GIT Integration with Jenkins 
+   22.      Jenkins CD pipeline 
+   23.      CD Pipeline as a Code
+   24.      CD Pipeline as Organization Folder 
+   25.      Folder Variable 
+   26.      ENVINJECT Variable 
+   27.      Jenkins JOB Configuraiotn Store in SCM 
+   28.      Trigger Jenkins Job from command Line 
+   29.      Trigger Jenkins Job on each commit in GIT 
+   30.      Mail Configuraiton with Jenkins
+   31.      Blueprint Jenkins Plugin 
+   

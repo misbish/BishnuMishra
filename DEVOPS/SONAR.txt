@@ -1,0 +1,24 @@
+                          OM SHRI SAI RAM 
+						--------------------
+						
+    1.     Sonar Installation                        --------- DONE 
+	2.     Sonar Upgradation 
+	3.     Sonar Database Upgrade 
+	4.     Sonar Plugin Installation                 --------- DONE 
+	5.     Sonar LDAP Configuration 
+	6.     Quality profile Set Up                    --------- DONE 
+	7.     Quality gate Set Up                       --------- DONE 
+	8.     Wrtie Custom Plugin 
+	9.     Extend Exsiting Plugin 
+   10.     Sonar Pom Configuration                   --------- DONE 
+   11.     Sonar for Jenkins 
+   12.     Sonar for Gradle 
+   13.     Sonar for Android 
+   14.     Sonar for IOS
+   15.     Unit Test Code Coverage by Jacoco 
+   16.     Integration Test Code Coverage by Jacoco
+   17.     Code Coverage for Android Projects 
+   18.     Code Coverage for IOS Projects 
+   19.     Sonar Puppetize 
+   20.     Sonar Admin Functionality 
+	

@@ -1,0 +1,25 @@
+                        OM SHRI SAI RAM 
+				    ------------------------
+					
+	1.   GIT - A distributed Version Control 
+	- Centralized vs Distributed Version Control System 
+				     - GIT Features 
+				        - Snapshots , not differences
+					    - All operations are local
+					    - Git has Integrity SHA-1 hash mechanism for checksum
+					    - The Three States ( Modified , Staged , Committed )
+				
+	2.   GIT Basics 
+	3.   GITHUB Basics 
+	                    - Create an Account 
+						- Generate ssh key with ssh-keygen and configure 
+						- fork a Project 
+						- Clone to Local ( git clone <gitUrl>)
+						- Create a topic branch ( git checkout -b <customName> )
+						- Make changes to some file ( git diff --word-diff )
+						- Commit the changes ( git commit -a -m "message" )
+						- Push to Project ( git push origin <customName> )
+						- Create pull request 
+						- Iterate Pull request and comments 
+	4.   Branching 
+	5.   GIT - Eclipse IDE 

@@ -1,0 +1,23 @@
+                            OM SHRI SAI RAM 
+						-----------------------
+						
+	1.    Environment Variable Set Up     ------ DONE 
+	2.    Eclipse IDE Set Up              ------ DONE
+	3.    Maven Integration With Eclipse  ------ DONE
+	4.    Gradle Integration with Eclipse ------ DONE
+	5.    SVN Integration with Eclipse    ------ DONE
+	6.    GIT Inregration with Eclipse    ------ DONE
+	7.    Tomcat Server Set Up in Eclipse ------ DONE
+	8.    Jad Integration with Eclipse    ------ DONE
+	9.    STS Set Up
+   10.    Gepetto Set Up 
+   11.    Set Java for Eclipse            ------ DONE ( In Eclipse.ini file )
+   12.    Virtual Box Set Up
+   13.    Vagrant Set Up
+   14.    Puppet Set Up
+   15.    git set Up in Local             ------ DONE ( git for windows ) ( HOME )
+   16.    tortoise SVN Set Up in Local    ------ DONE 
+   17.    Maven Set Up                    ------ DONE ( M2_HOME )
+   18.    Gradle Set Up                   ------ DONE ( GRADLE_HOME )
+   19.    Jenkins Set Up                  ------ DONE ( JENKINS_HOME )
+   20.    Jdk Set Up                      ------ DONE ( JAVA_HOME )

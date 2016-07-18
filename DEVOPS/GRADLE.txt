@@ -1,0 +1,65 @@
+                                OM SHRI SAI RAM 
+							-----------------------
+							
+	   1.   What is Gradle                        ------------- DONE 
+	   2.   Gradle Installation                   ------------- DONE 
+	   3.   Gradle Integration with Eclipse       ------------- DONE 
+	   4.   Single Module Project                 ------------- DONE  
+	   5.   Multi Module Project                  
+	   6.   Create a java Style Project           ------------- DONE  ( gradle init --type java-library )
+	   7.   Create a groovy Style Project         ------------- DONE  ( gradle init --type groovy-library )
+	   8.   Create a Project                      ------------- DONE  ( gradle init )
+	   9.   Add Gradle nature to existing Project ------------- DONE  ( In Eclipse , Add gradle nature )
+	  10.   Project Name                          ------------- DONE  ( settings.gradle -> rootProject.name=Bishnu)
+	  11.   Project Group 
+	  12.   Project Version                       ------------- DONE  ( build.gradle -> version '1.0.0' )
+	  13.   Project Description                   ------------- DONE  ( build.gradle -> description="""hihi""")
+	  14.   allprojects vs subprojects            ------------- DONE 
+	  15.   Repositories                          ------------- DONE 
+	  16.   Dependencies                          ------------- DONE 
+	  17.   Dependency Management
+	  18.   Plugin 
+	  19.   Plugin Management 
+	  20.   Profile 
+	  21.   Create Custom Task                    ------------- DONE 
+	  22.   Task Dependency                       ------------- DONE 
+	  23.   Properties 
+	  24.   build.gradle                          -------------  
+	  25.   settings.gradle                       -------------  
+	  26.   gradle.properties                     -------------  
+	  27.   Gradle daemon                         ------------- DONE ( --daemon --stop org.gradle.daemon=true in gradle.properties )
+	  28.   Refresh caches                        ------------- DONE ( Delete  ~/.caches , else --refresh-dependencies )
+	  29.   Gradle Wrapper                        ------------- 
+	  30.   Gradle Command Line                   ------------- DONE 
+	  31.   Maven to Gradle Migration 
+	  32.   Maven & Gradle Feature Compare
+	  
+	   
+	   ``````````````````
+	   COMMAND LINE 
+	   ``````````````````
+	   gradle init 
+	   gradle init --type java-library
+	   gradle init --type groovy-library
+	   gradle init --type pom
+	   gradle projects
+	   gradle :tasks
+	   gradle tasks
+	   gradle tasks -all
+	   gradle tasks init 
+	   gradle -h
+	   gradle help --task <taskName> 
+	   gradle version
+	   gradle --daemon 
+	   gradle --stop 
+	   gradle -q / --quiet
+	   gradle build
+	   gradle clean build
+	   gradle clean build -x assemble
+	   gradle -b path_to_build.gradle build
+	   gradle -p path_to_gradle_directory build 
+	   gradle build --continue
+	   
+	   
+	   
+	   
