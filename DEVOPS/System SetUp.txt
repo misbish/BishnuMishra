@@ -9,12 +9,12 @@
 	6.    GIT Inregration with Eclipse    ------ DONE
 	7.    Tomcat Server Set Up in Eclipse ------ DONE
 	8.    Jad Integration with Eclipse    ------ DONE
-	9.    STS Set Up
-   10.    Gepetto Set Up 
+	9.    STS Set Up                      ------ NOT STARTED ( Not Required Now )
+   10.    Gepetto Set Up                  ------ DONE ( TODO: Commit Puppet Nature )
    11.    Set Java for Eclipse            ------ DONE ( In Eclipse.ini file )
-   12.    Virtual Box Set Up
-   13.    Vagrant Set Up
-   14.    Puppet Set Up
+   12.    Virtual Box Set Up              ------ DONE ( TODO: See PPT By Hardeep )
+   13.    Vagrant Set Up                  ------ DONE ( TODO: Discuss with Hardeep )
+   14.    Puppet Set Up                   ------ DONE 
    15.    git set Up in Local             ------ DONE ( git for windows ) ( HOME )
    16.    tortoise SVN Set Up in Local    ------ DONE 
    17.    Maven Set Up                    ------ DONE ( M2_HOME )
