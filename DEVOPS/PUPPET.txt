@@ -3,7 +3,7 @@
 					   
 	1.  Vagrant     ----------- DONE 
 	2.  Yaml        ----------- DONE 
-	3.  Hiera       -----------  
+	3.  Hiera       ----------- DONE ( TODO : Hiera_include & Look Up Type in detail ) 
 	4.  Puppet 
 	5.  Beaker      ----------- Not In Scope 
 	6.  Rspec       ----------- Not In Scope 

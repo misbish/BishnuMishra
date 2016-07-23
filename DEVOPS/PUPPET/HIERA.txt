@@ -65,16 +65,7 @@
 -h, --hash	Return all hash values as a merged hash
 -j, --json FILE	JSON file to load scope from
 -y, --yaml FILE	YAML file to load scope from
--m, --mcollective IDENTITY	Use facts from a node (via mcollective) as scope-V, --version	Version information
--c, --config FILE	Specify an alternate configuration file location
--d, --debug	Show debugging information
--a, --array	Return all values as a flattened array of unique values
--h, --hash	Return all hash values as a merged hash
--j, --json FILE	JSON file to load scope from
--y, --yaml FILE	YAML file to load scope from
 -m, --mcollective IDENTITY	Use facts from a node (via mcollective) as scope
-	
-	
 	
 	
 orawls::bsu {'BYJ1':
