@@ -1,0 +1,15 @@
+                         OM SHRI SAI RAM 
+					   -------------------
+					   
+	1.  Vagrant     ----------- DONE 
+	2.  Yaml        ----------- DONE 
+	3.  Hiera       -----------  
+	4.  Puppet 
+	5.  Beaker      ----------- Not In Scope 
+	6.  Rspec       ----------- Not In Scope 
+	7.  Factor      ----------- Not In Scope
+	8.  ENC
+	9.  MCollective ----------- Not In Scope 
+   10.  R10k        ----------- Not In Scope
+   
+						 
