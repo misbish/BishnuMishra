@@ -3,22 +3,19 @@
 				  
     DevOps      :   Continous Delivery
 	             
-		1.  Puppet
-		2.  Jenkins
-		3.  Sonar 
-		4.  Git 
-		5.  Gradle 
+		1.  Puppet     - Base Service , TC Server , WLS Server , SonarQube , ENC , Hiera , YAML , Vagrant 
+		2.  Jenkins    - Blueprint Plugin , CD Pipepline 
+		3.  Sonar      - Link-Sonar-Plugin , Set Up For Maven & Gradle , Android, IOS 
+		4.  Git        - Basics , GITHUB , Branching , Migration 
+		5.  Gradle     - Basics , Migration 
 		
 		
 	Java        :   Dashboard 
 	
 	    1.  Core Java 
+		2.  Spring Core - Dashboard Application
+		3.  Spring REST Webservice - Dashboard Application 
 		
-		
-	GMAT        :   Target-700+
-	
-	    1.  MANHATTAN Course ( PS DS CR )
-		2.  OG Practice ( PS DS CR )
 		
 		
 	Duration : 2 weeks 
