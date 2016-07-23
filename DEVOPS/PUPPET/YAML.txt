@@ -1,0 +1,113 @@
+                              OM SHRI SAI RAM 
+							-------------------
+							
+	http://www.yaml.org/YAML_for_ruby.html#collections
+	 
+	http://yaml-online-parser.appspot.com/  
+	
+	Space and Tab are different .
+	
+	
+	---   start of document 
+	...   end of document 
+	
+Sequence -  You can specify a list in YAML by placing each member of the list 
+            on a new line with an opening dash. These lists are called sequences.
+			
+Mapping  -  You can add a keyed list (also known as a dictionary or hash) to your document by placing 
+            each member of the list on a new line, with a colon seperating the key from its value. 
+			In YAML, this type of list is called a mapping.
+	
+Yaml
+
+ Simple Sequence 	 	 in YAML? 
+- apple 
+- banana 
+- carrot 
+Ruby
+
+ Simple Sequence 	 	 in Ruby? 
+['apple', 'banana', 'carrot']  
+-----------------------------------------------------
+
+Yaml
+
+ Nested Sequences 	 	 in YAML? 
+- 
+ - foo 
+ - bar 
+ - baz 
+Ruby
+
+ Nested Sequences 	 	 in Ruby? 
+[['foo', 'bar', 'baz']] 
+
+
+-----------------------------------------------------
+Yaml
+
+ Mixed Sequences 	 	 in YAML? 
+- apple 
+- 
+ - foo 
+ - bar 
+ - x123 
+- banana 
+- carrot 
+Ruby
+
+ Mixed Sequences 	 	 in Ruby? 
+['apple', ['foo', 'bar', 'x123'], 'banana', 'carrot'] 
+
+------------------------------------------------------
+
+
+Yaml
+
+ Simple Mapping 	 	 in YAML? 
+foo: whatever 
+bar: stuff 
+Ruby
+
+ Simple Mapping 	 	 in Ruby? 
+{ 'foo' => 'whatever', 'bar' => 'stuff' } 
+
+-------------------------------------------------------
+SEQUENCE MAP - A value in a map is a Sequence 
+
+
+Yaml
+
+ Sequence in a Mapping 	 	 in YAML? 
+foo: whatever 
+bar: 
+ - uno 
+ - dos 
+Ruby
+
+ Sequence in a Mapping 	 	 in Ruby? 
+{ 'foo' => 'whatever', 'bar' => [ 'uno', 'dos' ] } 
+
+-------------------------------------------------------
+NESTED MAPPING -  A Value in Mapping is a mapping 
+
+
+Yaml
+
+ Nested Mappings 	 	 in YAML? 
+foo: whatever 
+bar: 
+ fruit: apple 
+ name: steve 
+ sport: baseball 
+Ruby
+
+ Nested Mappings 	 	 in Ruby? 
+{ 'foo' => 'whatever',  
+  'bar' => { 
+     'fruit' => 'apple',  
+     'name' => 'steve', 
+     'sport' => 'baseball' 
+   } 
+} 
+---------------------------------------------------------

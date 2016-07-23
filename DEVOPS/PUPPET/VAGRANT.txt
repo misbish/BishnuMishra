@@ -1,0 +1,43 @@
+                           OM SHRI SAI RAM 
+						---------------------
+						
+	 Vagrant - The command line utility for managing the lifecycle of virtual machines.
+	         - It provides easy to configure, reproducible, and portable work environments .
+			 - To achieve its magic, Vagrant stands on the shoulders of giants. 
+			   Machines are provisioned on top of VirtualBox, VMware, AWS, or any other provider.
+			   Then, industry-standard provisioning tools such as shell scripts, Chef, or Puppet,
+			   can be used to automatically install and configure software on the machine.
+			   
+	 Vagrnat Installation - Choose Proper installer or package then proceed as per OS standard 
+	                      - Can be installed as Ruby Gem , but not supported anymore
+						  - vagrant will be added to system path 
+						  
+						  
+	 Project Set up       - vagrant init - This will place vagrant file in current directory 
+	 
+	 Boxes   - Instead of building a virtual machine from scratch, which would be a slow and tedious process,
+               Vagrant uses a base image to quickly clone a virtual machine. These base images are known as 
+			   "boxes" in Vagrant
+	 
+	         - vagrant box add <userName/boxName>  - This will download the box named "<boxName>"
+			 
+			 - In Vagrant file 
+			    Vagrant.configure("2") do |config|
+					config.vm.box = "hashicorp/precise64"
+					config.vm.box_version = "1.1.0"
+					config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+				end
+			 
+	 Up & SSH -  vagrant up - Boot your first Vagrant environment
+	 
+	          -  vagrant ssh  -   This command will drop you into a full-fledged SSH session
+			  
+			  -  vagrant destroy - Does not actually remove the downloaded box file.
+                                   But destroys the machine .
+
+              -  vagrant box remove  -  Completely remove the box file
+			  
+			  -  vagrant reload --provision -  Quickly restart your virtual machine , skipping initial import step 
+			  
+			  -  vagrant  halt - Shutdown teh virtual machine 
+			  

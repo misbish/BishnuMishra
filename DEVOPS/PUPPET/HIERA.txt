@@ -1,0 +1,94 @@
+    - Hiera is a key/value lookup tool for configuration data .
+	- Hiera ships with Puppet agent .
+	- Hiera makes Puppet better by keeping site-specific data out of your manifests. 
+	- Follow below  - Install puppet agent 
+	                - Make a hiera.yaml config file.
+					- Arrange a hierarchy that fits your site and data.
+                    - Write data sources ( Follow Yaml Syntax ) 
+                    - Use your Hiera data in Puppet (or any other tool).
+                    - Hiera from command line 
+					
+	- Hiera Config file ( hiera.yaml ) - Used to set  the hierachy 
+	- Location : By default, the config file is: /etc/puppetlabs/puppet/hiera.yaml
+	             Use the hiera_config setting in puppet.conf (/etc/puppetlabs/puppet/puppet.conf )to specify a different config file.
+				 You can specify a different config file with the -c (--config) option.
+				 You can specify a different config file or a hash of settings when calling Hiera.new.
+				 
+	- Format : Hiera’s config file must be a YAML hash.
+               The file must be valid YAML, but may contain no data.
+			   Each top-level key in the hash must be a Ruby symbol with a colon (:) prefix.
+			   
+---
+:backends:
+  - yaml ##default Backend 
+  - json
+:yaml:
+  :datadir: "/workspace"  ##The directory in which to find data source files. This must be a string.
+:json:
+  :datadir: "/workspace"
+:hierarchy:   ##Must be a string or an array of strings, where each string is the name of a static or dynamic data source. (A dynamic source is simply one that contains a %{variable} interpolation token.Top to Bottom 
+  - "nodes/%{::trusted.certname}"
+  - "virtual/%{::virtual}"
+  - "common"
+  - '%{environment}/hieradata/%{server_role_munged}/%{branch_name}/%{datacenter}/%{servergroup}'
+  - '%{environment}/hieradata/%{server_role_munged}/%{branch_name}/%{datacenter}'
+  - '%{environment}/hieradata/%{server_role_munged}/%{branch_name}'
+  - '%{environment}/hieradata/%{server_role_munged}/local'
+  - '%{environment}/hieradata/%{server_role_munged}'
+  - '%{environment}/hieradata/common'
+  - '%{environment}/.bunsen/common/hieradata/datacenters/%{datacenter}'
+  - '%{environment}/.bunsen/common/hieradata/common'
+:logger: console  ##console (messages go directly to STDERR) Default Value 
+                  ##puppet (messages go to Puppet’s logging system)
+                  ##noop (messages are silenced)
+:merge_behavior: native
+
+
+    LookUp Type   :   Priority LookUp ( Default  and first match ) 
+                      Array Merge 
+                      Hash Merge 	- Native Merge
+                                    - Deep Merge 					  
+	
+
+	Interpolation tokens : Interpolation tokens look like %{variable}, %{variable.subkey}, or %{function("input")}.
+	                       Remove Puppet’s $ (dollar sign) prefix when using its variables in Hiera.
+                          (That is, a variable called $::clientcert in Puppet is called ::clientcert in Hiera.)
+						  
+						  
+	Assigning classes to nodes with Hiera (hiera_include)  :    
+	
+	Hiera Command Line :   hiera key defaultvalue key=value -v -h -a -y -c -d
+-V, --version	Version information
+-c, --config FILE	Specify an alternate configuration file location
+-d, --debug	Show debugging information
+-a, --array	Return all values as a flattened array of unique values
+-h, --hash	Return all hash values as a merged hash
+-j, --json FILE	JSON file to load scope from
+-y, --yaml FILE	YAML file to load scope from
+-m, --mcollective IDENTITY	Use facts from a node (via mcollective) as scope-V, --version	Version information
+-c, --config FILE	Specify an alternate configuration file location
+-d, --debug	Show debugging information
+-a, --array	Return all values as a flattened array of unique values
+-h, --hash	Return all hash values as a merged hash
+-j, --json FILE	JSON file to load scope from
+-y, --yaml FILE	YAML file to load scope from
+-m, --mcollective IDENTITY	Use facts from a node (via mcollective) as scope
+	
+	
+	
+	
+orawls::bsu {'BYJ1':
+  ensure                  => "present",
+  patch_id                => "BYJ1",
+  patch_file              => "p17071663_1036_Generic.zip",
+  log_output              => false,
+}
+
+
+---
+bsu_instances:
+  'BYJ1':
+     ensure                   "present"
+     patch_id:                "BYJ1"
+     patch_file:              "p17071663_1036_Generic.zip"
+     log_output:              false

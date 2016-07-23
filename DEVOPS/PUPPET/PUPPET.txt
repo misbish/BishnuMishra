@@ -1,0 +1,62 @@
+                              OM SHRI SAI RAM 
+							-------------------
+							
+	- Puppet has its own configuration language .
+	
+	Resource :  Core of Puppet language 
+	Class : Group of resources can be organized into classes ,  a larger unit of configuration .
+	        May  consist of classes also .
+    Node : Serve different roles .
+	       Based on role , they get differennt set of classes 
+		   
+	Node Classfication : Task of configuring which classes will be applied to a given Node 
+	                     Can be done in Node definitions or Outside manifest hiera or ENC 
+						 
+	Ordering : Is Important
+						 
+-   Puppet language files are called manifests, and are named with the .pp file extension. 
+-   Puppet always begins compiling with a single manifest ( which may be broken up into several
+    pieces ), called the “site manifest” or “main manifest.”
+-   Puppet compiles manifests into a catalog .
+-   Catalogs are static documents which contain resources and relationships. At various stages of a
+    Puppet run, a catalog will be in memory as a Ruby object, transmitted as JSON, and persisted to disk
+    as YAML. 
+-   In the standard agent/master architecture, nodes request catalogs from a puppet master server,
+    which compiles and serves them to nodes as needed. 
+
+-   Agent nodes cache their most recent catalog. If they request a catalog and the master fails to
+    compile one, they will re-use their cached catalog. This recovery behavior is governed by the
+    usecacheonfailure setting in puppet.conf. 
+	
+	
+	Resource :  Each resource describes some aspect of a system, like a service that must be running or a package that must be installed.
+                The block of Puppet code that describes a resource is called a resource declaration.
+				Declaring a resource instructs Puppet to include it in the catalog and manage its state on the target system .
+				Resource declarations inside a class definition or defined type are only added to the catalog once the class or an instance of the defined type is declared.
+				
+				Syntax
+				#Every resource has a type, a title, and a set of attributes:
+				    type {'title':
+						attribute => value,  #Command is optional after the finalattribute/value pair 
+					}
+				
+				#A resource declaration :
+					file { '/etc/passwd':
+					  ensure => file,
+					  owner => 'root',
+					  group => 'root',
+					  mode => '0600',
+                         }
+						 
+						 
+				Type :  The type identifies what kind of resource it is.Puppet has a large number of built-in resource types .
+				Title : The title is an identifying string. It only has to identify the resource to Puppet's compiler; it does not
+                        need to bear any relationship to the actual target system.
+                        Titles must be unique per resource type. Duplicate titles will cause a compilation failure.
+				Attributes : They describe the desired state of the resource; each attribute handles some aspect of the resource.
+                             Each resource type has its own set of available attributes .
+				
+				Puppet uses the title and name/namevar to identify duplicate resources — if either of these is 
+				duplicated within a given resource type, the compilation will fail.
+				
+				
