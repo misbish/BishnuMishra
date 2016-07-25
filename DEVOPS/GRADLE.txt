@@ -5,19 +5,19 @@
 	   2.   Gradle Installation                   ------------- DONE 
 	   3.   Gradle Integration with Eclipse       ------------- DONE 
 	   4.   Single Module Project                 ------------- DONE  
-	   5.   Multi Module Project                  
+	   5.   Multi Module Project                  ------------- DONE 
 	   6.   Create a java Style Project           ------------- DONE  ( gradle init --type java-library )
 	   7.   Create a groovy Style Project         ------------- DONE  ( gradle init --type groovy-library )
 	   8.   Create a Project                      ------------- DONE  ( gradle init )
 	   9.   Add Gradle nature to existing Project ------------- DONE  ( In Eclipse , Add gradle nature )
 	  10.   Project Name                          ------------- DONE  ( settings.gradle -> rootProject.name=Bishnu)
-	  11.   Project Group 
+	  11.   Project Group                         ------------- DONE  ( build.gradle -> group = 'org.wellsfargo')
 	  12.   Project Version                       ------------- DONE  ( build.gradle -> version '1.0.0' )
-	  13.   Project Description                   ------------- DONE  ( build.gradle -> description="""hihi""")
+	  13.   Project Description                   ------------- DONE  ( build.gradle -> description="""hihi"""   ,  "HI Mishra")
 	  14.   allprojects vs subprojects            ------------- DONE 
 	  15.   Repositories                          ------------- DONE 
 	  16.   Dependencies                          ------------- DONE 
-	  17.   Dependency Management
+	  17.   Dependency Management                 
 	  18.   Plugin 
 	  19.   Plugin Management 
 	  20.   Profile 
@@ -25,16 +25,22 @@
 	  22.   Task Dependency                       ------------- DONE 
 	  23.   Properties 
 	  24.   build.gradle                          -------------  
-	  25.   settings.gradle                       -------------  
+	  25.   settings.gradle                       ------------- DONE 
 	  26.   gradle.properties                     -------------  
 	  27.   Gradle daemon                         ------------- DONE ( --daemon --stop org.gradle.daemon=true in gradle.properties )
 	  28.   Refresh caches                        ------------- DONE ( Delete  ~/.caches , else --refresh-dependencies )
-	  29.   Gradle Wrapper                        ------------- 
+	  29.   Gradle Wrapper                        ------------- DONE 
 	  30.   Gradle Command Line                   ------------- DONE 
 	  31.   Maven to Gradle Migration 
 	  32.   Maven & Gradle Feature Compare
+	  33.   Custom Plugin 
+	  34.   buildScript Block 
 	  
 	   
+	   
+	   https://julien.ponge.org/blog/an-experiment-in-maven-to-gradle-migration/  
+	   https://docs.gradle.org/current/userguide/
+	    
 	   ``````````````````
 	   COMMAND LINE 
 	   ``````````````````
@@ -56,10 +62,24 @@
 	   gradle build
 	   gradle clean build
 	   gradle clean build -x assemble
-	   gradle -b path_to_build.gradle build
-	   gradle -p path_to_gradle_directory build 
+	   gradle -b path_to_build.gradle build (gradle -q -b subdir/myproject.gradle hello)
+	   gradle -p path_to_gradle_directory build  gradle -q -p subdir hello
 	   gradle build --continue
+	   gradle --rerun-tasks doIT ( Force to execute )
+	   gradle dependencies 
+	   gradle properties 
+	   gradle -m clean build ( Dry run to see the list of all tasks that will be exuecuted in which order )
 	   
 	   
 	   
+	   
+	   
+	   TODO LIST :
+	   
+	   1) Migrate an existing Maven Project 
+	   2) Maven VS Gradle 
+	   3) Command Line 
+	   4) Refer Existing Project in WellsFargo GITHUB 
+	   5) Learn By Doing 
+	   6) Current State : I Can Easily work on it  with Reference Doc and Google Guru .
 	   
