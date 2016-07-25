@@ -10,15 +10,7 @@
 		5.  Gradle     - Basics , Migration 
 		
 		
-	Java        :   Dashboard 
-	
-	    1.  Core Java 
-		2.  Spring Core - Dashboard Application
-		3.  Spring REST Webservice - Dashboard Application 
 		
 		
-		
-	Duration : 2 weeks 
-	           18 19 20 21 22 23 24 
-			   25 26 27 28 29 30 31 
+	Duration    :   1 Week 
 		
