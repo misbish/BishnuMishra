@@ -3,7 +3,7 @@
 				  
     DevOps      :   Continous Delivery
 	             
-		1.  Puppet
+		1.  Puppet 
 		2.  Jenkins
 		3.  Sonar 
 		4.  Git 
